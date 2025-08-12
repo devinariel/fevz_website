@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&family=Karla:wght@300;400;500;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --artist-pink: #A97580;
+  --artist-gray: #3C3C3C;
+  --artist-dark: #0A0A0A;
+  --artist-blue: #1932C1;
+  --artist-hover-gold: #D6A046;
+}
+
+body {
+  @apply bg-white text-gray-900;
+  font-family: 'Karla', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway', sans-serif;
+}
+
+.artist-name {
+  color: var(--artist-pink);
+}
+
+.heading-primary {
+  color: var(--artist-pink);
+}
+
+.heading-secondary {
+  color: var(--artist-gray);
+}
+
+.text-body {
+  color: var(--artist-dark);
+}
+
+.social-link {
+  color: var(--artist-pink);
+}
+
+.nav-item:hover {
+  color: var(--artist-hover-gold);
+}
+
+.nav-item.active {
+  color: var(--artist-hover-gold);
+}
